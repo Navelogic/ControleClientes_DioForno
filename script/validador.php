@@ -1,11 +1,11 @@
 <?php
-include 'conect.cfg';
+include './conect.cfg';
 session_start();
 
 $nomeTela = $_POST['username'];
 $senha = $_POST['senha'];
 
-$sql_usuarios = "SELECT * FROM usuarios WHERE nomeTela = '$nomeTela' AND senha = '$senha'";
+$sql_usuarios = "SELECT * FROM usuario WHERE nomeTela = '$nomeTela' AND senha = '$senha'";
 
 
 
